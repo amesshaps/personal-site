@@ -1,0 +1,15 @@
+.texture (@texture) {
+    @media all {
+        body { background-image:url(../img/textures/@texture.png); }
+    }
+    @media all and (-webkit-min-device-pixel-ratio: 2) {
+        body { background-image:url(../img/textures/@texture_@2x.png); }
+    }
+}
+
+body {
+}
+
+nav.navbar {
+    .texture('p4');
+}
